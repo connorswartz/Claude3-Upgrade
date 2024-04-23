@@ -12,9 +12,7 @@ Before using this script, make sure you have the following:
 
 1. Clone the repository or download the script file.
 2. Install the required Python packages by running the following command:
-   ```
    pip install requests argparse
-   ```
 
 ## Usage
 
@@ -22,26 +20,20 @@ The script can be run from the command line with various options and arguments. 
 ### Generate Code for a New Project
 To generate code for a new project, use the following command:
 
-```
 python script.py <project_directory>
-```
 
 - `<project_directory>`: The path to the directory where the new project will be created.
 
 The script will prompt you to enter an instruction describing the desired code project. It will then send the instruction to the Anthropic Claude-3 API, which will generate the necessary code files and directory structure based on the instruction.
 
 Example:
-```
 python script.py /path/to/project/directory
-```
 
 ### Edit Existing Code Files
 
 To edit existing code files using the API, use the following command:
 
-```
 python script.py <project_directory> --files <file1> <file2> ...
-```
 
 - `<project_directory>`: The path to the directory where the project is located.
 - `--files`: Flag indicating that specific files should be edited.
@@ -50,17 +42,13 @@ python script.py <project_directory> --files <file1> <file2> ...
 The script will prompt you to enter an instruction describing the desired changes to the code files. It will then send the instruction and the contents of the specified files to the API for editing.
 
 Example:
-```
 python script.py /path/to/project/directory --files /path/to/file1.py /path/to/file2.py
-```
 
 ### Edit Code Files in a Directory
 
 To edit code files in a directory using the API, use the following command:
 
-```
 python script.py <project_directory> --directory <directory_path>
-```
 
 - `<project_directory>`: The path to the directory where the project is located.
 - `--directory`: Flag indicating that multiple files in a directory should be edited.
@@ -69,9 +57,7 @@ python script.py <project_directory> --directory <directory_path>
 The script will prompt you to enter an instruction describing the desired changes to the code files. It will then send the instruction and the contents of all code files in the specified directory to the API for editing.
 
 Example:
-```
 python script.py /path/to/project/directory --directory /path/to/code/directory
-```
 
 ## Workflow
 
